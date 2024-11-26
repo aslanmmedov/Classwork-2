@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* input */
+.navbar{
+    margin-top:1rem;
+}
+.filterField,input{
+    margin-top:1rem;
+    width:50%;
+    padding:0.5rem;
+    border-radius:10px;
+    border:2px solid rgb(132, 132, 173);
+    outline: none;
+}
+
+/* cards */
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+.card-img{
+    width:100%;
+}
+img{
+    width:100%;
+    border-radius: 10px;
+}
+.product-card{
+    width:30%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:1rem;
+}
+.product-cards{
+    padding-top:2rem;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.card-parag{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+/* table */
+
+form{
+    margin-bottom:2rem;
+}
+.img-table{
+    width:100px;
+}
+.actions{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    height:90px;
+}
+.submit{
+    width:80px;
+}

@@ -32,7 +32,7 @@ async function fetchData() {
     });
     
     search.addEventListener("keyup",function(event){
-        let filteredName = data.filter((p) => p.title.includes(event.key))
+        let filteredName = data.filter((p) => p.title.includes(event.target.value.toLowerCase().trim()))
         filteredName.forEach(blog => {
             cardHolder.innerHTML = "";
             let blogB = document.createElement("div");

@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "hashed_password",
+      "role": "user",
+      "profilePicture": "https://example.com/profile.jpg",
+      "createdAt": "2024-11-25",
+      "basket": [
+        {
+          "productId": 1,
+          "quantity": 2
+        },
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "favorites": [
+        {
+          "productId": 3
+        },
+        {
+          "productId": 1
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "eef7",
+      "name": "aslan",
+      "description": "aslan",
+      "price": "12",
+      "stock": "12",
+      "discount": "12",
+      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
+      "categoryId": "2"
+    },
+    {
+      "id": "2812",
+      "name": "kana",
+      "description": "kana",
+      "price": "23",
+      "stock": "23",
+      "discount": "23",
+      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
+      "categoryId": "2"
+    },
+    {
+      "id": "05bf",
+      "name": "aslan",
+      "description": "aslan",
+      "price": "12",
+      "stock": "12",
+      "discount": "12",
+      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
+      "categoryId": "2"
+    }
+  ],
+  "categories": [
+    {
+      "name": "test",
+      "createdAt": "2024-11-26",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Smartphones",
+      "createdAt": "2024-11-25"
+    },
+    {
+      "name": "Gaming",
+      "createdAt": "2024-11-26",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Accessories",
+      "createdAt": "2024-11-25"
+    }
+  ]
+}
