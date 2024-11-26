@@ -16,6 +16,7 @@ let tbody = document.querySelector("tbody");
 function selectCategory() {
     // let {data} = await getDataById("products");
     adminForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
         const { data: categories } = await getAllData("categories");
         const selectedCategory = categories.find((q) => q.name.toLowerCase().trim() === category.value.toLowerCase())
         const categoryId = selectedCategory.id;
@@ -38,8 +39,8 @@ function selectCategory() {
 selectCategory();
 
 
-function drawTable(products) {
-    console.log(products);
+function drawTable(products,event) {
+    // console.log(products);
     tbody.innerHTML = "";
     products.forEach(product => {
         let prodElem = document.createElement("tr");
@@ -54,7 +55,7 @@ function drawTable(products) {
                     <td>${product.stock}</td>
                     <td>${product.discount}</td>
                     <td class = "actions">
-                        <button class = "btn btn-warning edit" >Edit</button>
+                        <a href = "edit.html?id=${product.id}" target = "blanck" class = "btn btn-warning edit">Edit</a>
                         <button class = "btn btn-danger delete" data-id =${product.id}>Delete</button>
                     </td>
         `
@@ -62,7 +63,7 @@ function drawTable(products) {
     });
     let dltBtn = document.querySelectorAll(".delete");
     dltBtn.forEach(btn => {
-        console.log(btn)
+        // console.log(btn)
         let dataId = btn.getAttribute("data-id");
         btn.addEventListener("click",function(){
             deleteDataById("products",dataId);

@@ -20,6 +20,6 @@ export async function deleteDataById(endpoint,id){
     return response
 }
 export async function editDataById(endpoint,id,payload){
-    const response = await axios.delete(`${BASE_URL}/${endpoint}/${id}`,payload);
+    const response = await axios.put(`${BASE_URL}/${endpoint}/${id}`,payload);
     return response
 }

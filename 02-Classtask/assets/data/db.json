@@ -30,34 +30,14 @@
   ],
   "products": [
     {
-      "id": "eef7",
-      "name": "aslan",
-      "description": "aslan",
-      "price": "12",
-      "stock": "12",
-      "discount": "12",
-      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
-      "categoryId": "2"
-    },
-    {
-      "id": "2812",
-      "name": "kana",
-      "description": "kana",
-      "price": "23",
-      "stock": "23",
-      "discount": "23",
-      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
-      "categoryId": "2"
-    },
-    {
-      "id": "05bf",
-      "name": "aslan",
-      "description": "aslan",
-      "price": "12",
-      "stock": "12",
-      "discount": "12",
-      "image": "https://cdn.mos.cms.futurecdn.net/FkGweMeB7hdPgaSFQdgsfj.jpg",
-      "categoryId": "2"
+      "name": "kanan",
+      "description": "kanan",
+      "price": "22",
+      "stock": "22",
+      "discount": "1",
+      "image": "https://www.techadvisor.com/wp-content/uploads/2024/11/best-phones-2024-11.jpg?quality=50&strip=all&quot",
+      "categoryId": "4",
+      "id": "33f2"
     }
   ],
   "categories": [
