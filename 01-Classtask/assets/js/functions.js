@@ -5,6 +5,10 @@ export async function getAllData(endpoint) {
     const resp = await axios(`${BASE_URL}/${endpoint}`);
   return resp.data
 }
+export async function getDataById(endpoint,id) {
+    const resp = await axios(`${BASE_URL}/${endpoint}/${id}`);
+  return resp.data
+}
 export async function deleteDataById(endpoint,id){
     const resp = await axios.delete(`${BASE_URL}/${endpoint}/${id}`);
     return resp.data
